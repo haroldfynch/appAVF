@@ -1,0 +1,42 @@
+#sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100dvh;
+
+    background: white;
+
+    padding: 20px;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+    z-index: 2000;
+}
+
+
+.menuItem {
+    width: 100%;
+    height: 75px;
+
+    margin-bottom: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #f2f2f2;
+
+    text-align: left;
+    padding-left: 16px;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+.menuItem:active {
+    background: #dedede;
+}

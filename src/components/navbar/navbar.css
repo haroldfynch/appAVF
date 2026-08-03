@@ -1,0 +1,75 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+
+    background: rgb(255, 0, 0);
+    z-index: 1000;
+}
+
+#btnNavbar {
+    width: 100px;
+    height: 100px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnNavbar img {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+    display: block;
+}
+
+#sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100dvh;
+
+    background: white;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+    z-index: 2000;
+}
+
+#sideMenu.open {
+    transform: translateX(0);
+}
+
+
+/* Zone invisible qui capte les clics à côté */
+#menuOverlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 1500;
+}
+
+#menuOverlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}

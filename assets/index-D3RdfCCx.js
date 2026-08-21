@@ -293,7 +293,7 @@
 
           <div class="formRow criseRemarque">
             <label for="remarqueInput">Remarque</label>
-            <textarea id="remarqueInput" rows="3" placeholder="Optionnel..."></textarea>
+            <textarea id="remarqueInput" rows="3" placeholder="Si tu veux mettre une remarque personnalisée 🙂"></textarea>
           </div>
 
           <div class="formRow criseMedecine">
